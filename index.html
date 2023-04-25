@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- TITLE -->
+    <title>Portfolio - Guillermo San Martín</title>
+
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/logos/reacttablogo.svg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="./index.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header">
+        <h2 class="logo">
+          <a class="logo-link" href="./index.html">GSM</a>
+        </h2>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="list-item">
+              <a href="#home" class="list-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#projects" class="list-link">Projects</a>
+            </li>
+            <li class="list-item">
+              <a href="#aboutme" class="list-link">About me</a>
+            </li>
+            <li class="list-item">
+              <a href="#techstack" class="list-link">Tech stack</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="home" class="home-container">
+      <div class="home">
+        <article class="home-title">
+          <span class="home-span greeting">Hi, I'm</span>
+          <span class="home-span name">Guillermo San Martín</span>
+          <span class="home-span frontend">Frontend Developer</span>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/guillermosanmartin-developer/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./logos/linkedin.svg"
+                  alt="linkedin logo"
+                  class="social-img"
+                />
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                class="social-link"
+                href="https://github.com/GuillermoSMG"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./logos/github.svg"
+                  alt="github logo"
+                  class="social-img"
+                />
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                class="resume-link"
+                href="./pdf/CV_fullstack_en_04.pdf"
+                download="CV_FrontEnd-GuillermoSM.pdf"
+              >
+                <img
+                  src="./logos/logofile.svg"
+                  alt="File logo"
+                  class="resume-logo"
+                />
+                <span class="resume-span">Resume</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <div class="img-container">
+          <img src="./imgs/monitor.png" alt="monitor" class="img-photo" />
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects-container">
+      <h2 class="projects-title">Projects</h2>
+      <main class="projects">
+        <!-- ARTICLE -->
+        <article class="project">
+          <a
+            class="project-link"
+            href="https://clickntype.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./imgs/click&type.png"
+              alt="click&type ECommerce"
+              class="project-img"
+              title="clickntype ECommerce"
+            />
+          </a>
+          <div class="project-body">
+            <a
+              class="project-link"
+              href="https://clickntype.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="project-title">Click&Type</h3>
+            </a>
+            <span class="project-subtitle">ECommerce SPA</span>
+            <p class="project-description">
+              Stock and cart management, payment gateway, product gallery.
+            </p>
+            <ul class="project-stack">
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/react.svg"
+                  alt="React Logo"
+                  title="ReactJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/materialui.svg"
+                  alt="Material UI Logo"
+                  title="Material UI"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img firebase"
+                  src="./logos/firebase.svg"
+                  alt="Firebase Logo"
+                  title="Firebase"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- ARTICLE -->
+        <article class="project">
+          <a
+            class="project-link"
+            href="https://mediatubeapp.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./imgs/mediahub.png"
+              alt="Mediahub website"
+              class="project-img"
+              title="Mediahub website"
+            />
+          </a>
+          <div class="project-body">
+            <a
+              class="project-link"
+              href="https://mediatubeapp.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="project-title">Mediahub</h3>
+            </a>
+            <span class="project-subtitle">Plataforma de videos</span>
+            <p class="project-description">
+              Video search engine, player, video categories, channels,
+              recommended videos.
+            </p>
+            <ul class="project-stack">
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/react.svg"
+                  alt="React Logo"
+                  title="ReactJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/materialui.svg"
+                  alt="Material UI Logo"
+                  title="Material UI"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- ARTICLE -->
+        <article class="project">
+          <a
+            class="project-link"
+            href="https://favoriterepo.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./imgs/favoriteRepo.png"
+              alt="FavoriteRepo website"
+              class="project-img"
+            />
+          </a>
+          <div class="project-body">
+            <a
+              class="project-link"
+              href="https://favoriterepo.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="project-title">Favorite Repo</h3>
+            </a>
+            <span class="project-subtitle">Web de repositorios</span>
+            <p class="project-description">
+              View Github repositories of the entered user, add and remove
+              repositories to favorites.
+            </p>
+            <ul class="project-stack">
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/typescript.svg"
+                  alt="TypeScript Logo"
+                  title="TypeScript"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/react.svg"
+                  alt="React Logo"
+                  title="ReactJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  src="./logos/reactquery.png"
+                  alt="React Query Logo"
+                  title="React Query"
+                  class="stack-img"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/css.svg"
+                  alt="CSS Logo"
+                  title="CSS"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- ARTICLE -->
+        <article class="project">
+          <a
+            class="project-link"
+            href="https://minecraftcloneweb.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./imgs/minecraft.png"
+              alt="Minecraft Clone"
+              class="project-img"
+            />
+          </a>
+          <div class="project-body">
+            <a
+              class="project-link"
+              href="https://minecraftcloneweb.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="project-title">Minecraft Clone</h3>
+            </a>
+            <span class="project-subtitle">Videojuego</span>
+            <p class="project-description">
+              You can place up to 5 types of blocks, move and jump.
+            </p>
+            <ul class="project-stack">
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/react.svg"
+                  alt="React Logo"
+                  title="ReactJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/threejs.org.ico"
+                  alt="Threejs logo"
+                  title="ThreeJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/css.svg"
+                  alt="CSS logo"
+                  title="CSS"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- ARTICLE -->
+        <article class="project">
+          <a
+            class="project-link"
+            href="https://moviesearcher.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./imgs/moviesearcher.png"
+              alt="Movie Searcher"
+              class="project-img"
+              title="Movie Searcher"
+            />
+          </a>
+          <div class="project-body">
+            <a
+              class="project-link"
+              href="https://moviesearcher.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="project-title">Movie Searcher</h3>
+            </a>
+            <span class="project-subtitle">Engine to search movies</span>
+            <p class="project-description">
+              Autosearch while typing, debounce, does not allow searching for
+              the same thing twice in a row, filter by alphabetical order.
+            </p>
+            <ul class="project-stack">
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/react.svg"
+                  alt="React Logo"
+                  title="ReactJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/css.svg"
+                  alt="CSS Logo"
+                  title="CSS"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- ARTICLE -->
+        <article class="project">
+          <a
+            class="project-link"
+            href="https://github.com/GuillermoSMG/social-network-API"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./imgs/apisocialnet.png"
+              alt="Movie Searcher"
+              class="project-img"
+              title="Movie Searcher"
+            />
+          </a>
+          <div class="project-body">
+            <a
+              class="project-link"
+              href="https://github.com/GuillermoSMG/social-network-API"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="project-title">Social Network API</h3>
+            </a>
+            <span class="project-subtitle">API REST</span>
+            <p class="project-description">
+              User, auth, profile, upload images, publications, feed,
+              follow/unfollow system.
+            </p>
+            <ul class="project-stack">
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/nodejs.svg"
+                  alt="NodeJS Logo"
+                  title="NodeJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/express.svg"
+                  alt="ExpressJS Logo"
+                  title="ExpressJS"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/mongodb.svg"
+                  alt="MongoDB Logo"
+                  title="MongoDB"
+                />
+              </li>
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/jwt.svg"
+                  alt="JSON Web Tokens Logo"
+                  title="JSON Web Tokens"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
+      </main>
+    </section>
+    <!-- ABOUT ME -->
+    <section id="aboutme" class="aboutme-container">
+      <main class="aboutme">
+        <div class="aboutme-img-container">
+          <img
+            src="./imgs/fotoparacv2.png"
+            class="aboutme-img"
+            alt="Guillermo's photo"
+          />
+        </div>
+        <p class="aboutme-p">
+          Front-End developer with a passion for creating engaging and
+          easy-to-use webs. I enjoy constantly improving my skills and I want to
+          bring significant value to companies. If you're looking for a
+          committed, passionate, and dedicated Front-End developer, don't
+          hesitate to get in touch with me!
+        </p>
+      </main>
+    </section>
+    <section class="techstack-container" id="techstack">
+      <h2 class="techstack-title">Tech Stack</h2>
+      <main class="techstack">
+        <img
+          src="./logos/javascript.svg"
+          title="JavaScript"
+          alt="JavaScript Logo"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/react.svg"
+          alt="React Logo"
+          title="ReactJS"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/nodejs.svg"
+          alt="NodeJS Logo"
+          title="NodeJS"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/typescript.svg"
+          alt="TypeScript Logo"
+          title="TypeScript"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/express.svg"
+          alt="ExpressJS Logo"
+          title="ExpressJS"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/firebase.svg"
+          alt="Firebase Logo"
+          title="Firebase"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/mongodb.svg"
+          alt="MongoDB Logo"
+          title="MongoDB"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/reactquery.png"
+          alt="React Query Logo"
+          title="React Query"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/html.svg"
+          alt="HTML Logo"
+          title="HTML"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/css.svg"
+          alt="CSS Logo"
+          title="CSS"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/sass.svg"
+          alt="SASS Logo"
+          title="SASS"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/materialui.svg"
+          title="Material UI"
+          alt="Material UI Logo"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/bootstrap.svg"
+          alt="Bootstrap Logo"
+          title="Bootstrap"
+          class="techstack-icon"
+        />
+        <img
+          src="./logos/tailwind.svg"
+          alt="TailwindCSS Logo"
+          title="TailwindCSS"
+          class="techstack-icon"
+        />
+      </main>
+    </section>
+    <footer class="footer-container">
+      <div class="footer">
+        <h2 class="footer-title">Let's work together</h2>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a
+              class="social-link"
+              href="https://www.linkedin.com/in/guillermosanmartin-developer/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="./logos/linkedin.svg"
+                alt="linkedin logo"
+                class="social-img"
+              />
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a
+              class="social-link"
+              href="mailto:guille.seba0802@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="./logos/email.svg"
+                alt="Email logo"
+                class="social-img"
+              />
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a
+              class="resume-link"
+              href="./pdf/CV_fullstack_en_04.pdf"
+              download="CV_FrontEnd-GuillermoSM.pdf"
+            >
+              <img
+                src="./logos/logofile.svg"
+                alt="File logo"
+                class="resume-logo"
+              />
+              <span class="resume-span resume-footer">Resume</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
