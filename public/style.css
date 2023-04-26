@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-margin: 2rem;
 }
 
@@ -18,6 +18,15 @@
   --main-height: 70vh;
   --action-color: #ee609c;
   --action-hover: #00c9b7;
+  --gradient: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
 }
 
 /* ========== HEADER ========== */
@@ -51,7 +60,7 @@
 }
 
 .list-link {
-  color: var(--subtitle-color);
+  color: var(--title-color);
   text-decoration: none;
 }
 
@@ -102,15 +111,7 @@
 .frontend {
   font-size: 2em;
   font-weight: 700;
-  background: linear-gradient(
-    to right,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #b465da 0%,
-    #cf6cc9 33%,
-    #ee609c 66%,
-    #ee609c 100%
-  );
+  background: var(--gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -142,8 +143,8 @@
 .resume-link {
   display: flex;
   align-items: center;
-  background-color: var(--bg-secundary);
-  color: var(--bg-primary);
+  background: var(--gradient);
+  color: var(--title-color);
   border-radius: 15px;
   border: none;
   padding: 0.25rem 0.5rem;
@@ -154,8 +155,8 @@
 }
 
 .resume-link:hover {
-  background-color: var(--action-color);
-  color: var(--title-color);
+  background: var(--title-color);
+  color: var(--action-color);
 }
 
 .resume-span {
@@ -318,10 +319,11 @@
 .aboutme-img {
   background-color: var(--bg-primary);
   border-radius: 750px 1230px 800px 450px;
+  opacity: 0.95;
 }
 
 .aboutme-img-container {
-  background-color: var(--action-color);
+  background: var(--gradient);
   border-radius: 720px 340px 450px 650px;
 }
 
@@ -363,30 +365,98 @@
 
 /* ========== TECH STACK END ========== */
 
-/* ========== FOOTER ========== */
+/* ========== CONTACT ========== */
 
-.footer-container {
+.contact-container {
   background-color: var(--bg-primary);
   height: 12rem;
   display: flex;
+  min-height: 80vh;
   justify-content: center;
 }
 
-.footer {
+.contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: start;
   font-size: 1.5em;
   width: var(--main-width);
   color: var(--title-color);
   margin-bottom: 1rem;
 }
 
-.resume-footer {
+.contact-list {
+  margin: 2rem 0;
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-social {
+  margin: 0;
+}
+
+.resume-contact {
   font-size: 0.5em;
 }
 
-/* ========== FOOTER END ========== */
+.form-container {
+  margin: 2rem 0;
+  align-self: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.form-label {
+  font-size: 0.8em;
+}
+
+.form-input {
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  padding: 0.5rem;
+}
+
+.form-textarea {
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  padding: 0.5rem;
+  margin: 2rem 0;
+}
+
+.form-button {
+  width: 25%;
+  cursor: pointer;
+  margin: auto;
+  background: var(--gradient);
+  color: var(--title-color);
+  border-radius: 15px;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-weight: 900;
+  text-align: center;
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+
+.form-button:hover {
+  background: var(--bg-secundary);
+  color: var(--action-color);
+}
+
+/* ========== CONTACT END ========== */
 
 /* ========== MQ ========== */
 
@@ -413,6 +483,12 @@
 
   .projects {
     width: 80%;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -448,8 +524,17 @@
     background-color: var(--bg-secundary);
   }
 
-  .footer-container {
-    margin-bottom: 3rem;
+  .contact-container {
+    min-height: 100vh;
+  }
+
+  .contact-list {
+    margin: 0;
+  }
+
+  .input-container {
+    flex-direction: column;
+    align-items: start;
   }
 }
 

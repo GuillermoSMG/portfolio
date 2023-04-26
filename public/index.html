@@ -522,11 +522,11 @@
           />
         </div>
         <p class="aboutme-p">
-          Front-End developer with a passion for creating engaging and
-          easy-to-use webs. I enjoy constantly improving my skills and I want to
-          bring significant value to companies. If you're looking for a
-          committed, passionate, and dedicated Front-End developer, don't
-          hesitate to get in touch with me!
+          Front-End developer with passion for creating engaging and easy-to-use
+          webs. I enjoy constantly improving my skills and I want to bring
+          significant value to companies. If you're looking for a committed,
+          passionate, and dedicated Front-End developer, don't hesitate to get
+          in touch with me!
         </p>
       </main>
     </section>
@@ -619,54 +619,87 @@
         />
       </main>
     </section>
-    <footer class="footer-container">
-      <div class="footer">
-        <h2 class="footer-title">Let's work together</h2>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a
-              class="social-link"
-              href="https://www.linkedin.com/in/guillermosanmartin-developer/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="./logos/linkedin.svg"
-                alt="linkedin logo"
-                class="social-img"
+    <section class="contact-container">
+      <div class="contact">
+        <div class="contact-list">
+          <h2 class="contact-title">Let's work together</h2>
+          <ul class="social-list contact-social">
+            <li class="social-list-item">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/guillermosanmartin-developer/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./logos/linkedin.svg"
+                  alt="linkedin logo"
+                  class="social-img"
+                />
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                class="social-link"
+                href="mailto:guille.seba0802@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="./logos/email.svg"
+                  alt="Email logo"
+                  class="social-img"
+                />
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                class="resume-link"
+                href="./pdf/CV_fullstack_en_04.pdf"
+                download="CV_FrontEnd-GuillermoSM.pdf"
+              >
+                <img
+                  src="./logos/logofile.svg"
+                  alt="File logo"
+                  class="resume-logo"
+                />
+                <span class="resume-span resume-contact">Resume</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-container">
+          <form action="/send-email" method="post" class="form" id="form">
+            <div class="input-container">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                placeholder="Name..."
+                name="name"
+                required
+                class="form-input"
               />
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a
-              class="social-link"
-              href="mailto:guille.seba0802@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="./logos/email.svg"
-                alt="Email logo"
-                class="social-img"
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                placeholder="hello@hello.com"
+                name="email"
+                required
+                class="form-input"
               />
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a
-              class="resume-link"
-              href="./pdf/CV_fullstack_en_04.pdf"
-              download="CV_FrontEnd-GuillermoSM.pdf"
-            >
-              <img
-                src="./logos/logofile.svg"
-                alt="File logo"
-                class="resume-logo"
-              />
-              <span class="resume-span resume-footer">Resume</span>
-            </a>
-          </li>
-        </ul>
+            </div>
+            <textarea
+              placeholder="Hello!.."
+              name="message"
+              rows="5"
+              cols="32"
+              required
+              class="form-textarea"
+            ></textarea>
+            <button class="form-button" type="submit">Send</button>
+          </form>
+        </div>
       </div>
-    </footer>
+    </section>
   </body>
 </html>
