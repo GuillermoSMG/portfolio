@@ -513,6 +513,7 @@
     </section>
     <!-- ABOUT ME -->
     <section id="aboutme" class="aboutme-container">
+      <span class="big-circle-two"></span>
       <main class="aboutme">
         <div class="aboutme-img-container">
           <img
@@ -619,84 +620,64 @@
         />
       </main>
     </section>
-    <section class="contact-container">
-      <div class="contact">
-        <div class="contact-list">
-          <h2 class="contact-title">Let's work together</h2>
-          <ul class="social-list contact-social">
-            <li class="social-list-item">
-              <a
-                class="social-link"
-                href="https://www.linkedin.com/in/guillermosanmartin-developer/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="./logos/linkedin.svg"
-                  alt="linkedin logo"
-                  class="social-img"
-                />
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                class="social-link"
-                href="mailto:guille.seba0802@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="./logos/email.svg"
-                  alt="Email logo"
-                  class="social-img"
-                />
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                class="resume-link"
-                href="./pdf/CV_fullstack_en_04.pdf"
-                download="CV_FrontEnd-GuillermoSM.pdf"
-              >
-                <img
-                  src="./logos/logofile.svg"
-                  alt="File logo"
-                  class="resume-logo"
-                />
-                <span class="resume-span resume-contact">Resume</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="form-container">
-          <form action="/send-email" method="post" class="form" id="form">
-            <div class="input-container">
-              <label for="name" class="form-label">Name</label>
-              <input
-                type="text"
-                placeholder="Name..."
-                name="name"
-                required
-                class="form-input"
-              />
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                placeholder="hello@hello.com"
-                name="email"
-                required
-                class="form-input"
-              />
+    <section class="container" id="contact">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="./logos/web.svg" class="icon" alt="" />
+              <p>Maldonado, Maldonado, UY</p>
             </div>
-            <textarea
-              placeholder="Hello!.."
-              name="message"
-              rows="5"
-              cols="32"
-              required
-              class="form-textarea"
-            ></textarea>
-            <button class="form-button" type="submit">Send</button>
+            <div class="information">
+              <img src="./logos/email.svg" class="icon" alt="" />
+              <p>guille.seba0802@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with me :</p>
+            <div class="social-icons">
+              <a href="https://github.com/GuillermoSMG">
+                <img src="./logos/github.svg" alt="" srcset="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/guillermosanmartin-developer/"
+              >
+                <img src="./logos/linkedin.svg" alt="" srcset="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="/send-email" method="post" autocomplete="off">
+            <h3 class="title">Contact me</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
           </form>
         </div>
       </div>
