@@ -29,6 +29,9 @@
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
 
+    <!-- AOS JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- JS -->
     <script src="./menu.js" defer></script>
     <script src="./index.js" type="module" defer></script>
@@ -68,10 +71,33 @@
     <section id="home" class="home-container">
       <div class="home">
         <article class="home-title">
-          <span class="home-span greeting">Hi, I'm</span>
-          <span class="home-span name">Guillermo San Martín</span>
-          <span class="home-span frontend">Frontend Developer</span>
-          <ul class="social-list">
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            class="home-span greeting"
+            >Hi, I'm</span
+          >
+          <span
+            data-aos-duration="1500"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            class="home-span name"
+            >Guillermo San Martín</span
+          >
+          <span
+            data-aos="zoom-in"
+            data-aos-delay="1500"
+            data-aos-duration="1500"
+            class="home-span frontend"
+            >Frontend Developer</span
+          >
+          <ul
+            class="social-list"
+            data-aos-duration="1500"
+            data-aos="zoom-in"
+            data-aos-delay="2000"
+          >
             <li class="social-list-item">
               <a
                 class="social-link"
@@ -116,8 +142,14 @@
             </li>
           </ul>
         </article>
-        <div class="img-container">
-          <img src="./imgs/monitor.png" alt="monitor" class="img-photo" />
+        <div data-aos-duration="1500" data-aos="zoom-in" class="img-container">
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            src="./imgs/monitor.png"
+            alt="monitor"
+            class="img-photo"
+          />
         </div>
       </div>
     </section>
@@ -125,7 +157,7 @@
       <h2 class="projects-title">Projects</h2>
       <main class="projects">
         <!-- ARTICLE -->
-        <article class="project">
+        <article data-aos-duration="1500" data-aos="zoom-in" class="project">
           <a
             class="project-link"
             href="https://clickntype.netlify.app/"
@@ -192,7 +224,7 @@
           </div>
         </article>
         <!-- ARTICLE -->
-        <article class="project">
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             class="project-link"
             href="https://mediatubeapp.netlify.app/"
@@ -252,7 +284,7 @@
           </div>
         </article>
         <!-- ARTICLE -->
-        <article class="project">
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             class="project-link"
             href="https://favoriterepo.netlify.app/"
@@ -327,7 +359,7 @@
           </div>
         </article>
         <!-- ARTICLE -->
-        <article class="project">
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             class="project-link"
             href="https://minecraftcloneweb.netlify.app/"
@@ -393,7 +425,7 @@
           </div>
         </article>
         <!-- ARTICLE -->
-        <article class="project">
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             class="project-link"
             href="https://moviesearcher.netlify.app/"
@@ -453,7 +485,7 @@
           </div>
         </article>
         <!-- ARTICLE -->
-        <article class="project">
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             class="project-link"
             href="https://github.com/GuillermoSMG/social-network-API"
@@ -530,7 +562,7 @@
     <!-- ABOUT ME -->
     <section id="aboutme" class="aboutme-container">
       <span class="big-circle-two"></span>
-      <main class="aboutme">
+      <main class="aboutme" data-aos-duration="1500" data-aos="zoom-in">
         <div class="aboutme-img-container">
           <img
             src="./imgs/fotoparacv2.png"
@@ -547,7 +579,7 @@
     </section>
     <section class="techstack-container" id="techstack">
       <h2 class="techstack-title">Tech Stack</h2>
-      <main class="techstack">
+      <main data-aos-duration="1500" data-aos="zoom-in" class="techstack">
         <img
           src="./logos/javascript.svg"
           title="JavaScript"
@@ -636,7 +668,7 @@
     </section>
     <section class="container" id="contact">
       <span class="big-circle"></span>
-      <div class="form">
+      <div data-aos-duration="1500" data-aos="zoom-in" class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
           <p class="text">
@@ -702,5 +734,11 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
