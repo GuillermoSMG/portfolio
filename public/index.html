@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/x-icon" href="/logos/reacttablogo.svg" />
+    <link rel="icon" type="image/x-icon" href="./logos/reacttablogo.svg" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -30,7 +30,8 @@
     />
 
     <!-- JS -->
-    <script src="./index.js" type="module"></script>
+    <script src="./menu.js" defer></script>
+    <script src="./index.js" type="module" defer></script>
   </head>
   <body>
     <header class="header-container">
@@ -38,8 +39,13 @@
         <h2 class="logo">
           <a class="logo-link" href="./index.html">GSM</a>
         </h2>
+        <button
+          aria-controls="nav-list"
+          aria-expanded="false"
+          class="mobile-nav-toggle"
+        ></button>
         <nav class="nav">
-          <ul class="nav-list">
+          <ul data-visible="false" id="nav-list" class="nav-list">
             <li class="list-item">
               <a href="#home" class="list-link">Home</a>
             </li>
@@ -51,6 +57,9 @@
             </li>
             <li class="list-item">
               <a href="#techstack" class="list-link">Tech stack</a>
+            </li>
+            <li class="list-item">
+              <a href="#contact" class="list-link">Contact</a>
             </li>
           </ul>
         </nav>
