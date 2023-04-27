@@ -22,6 +22,13 @@
       rel="stylesheet"
     />
 
+    <!-- TOASTIFY -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
     <!-- JS -->
     <script src="./index.js" type="module"></script>
   </head>
@@ -659,20 +666,20 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="/send-email" method="post" autocomplete="off">
+          <form autocomplete="off" id="form">
             <h3 class="title">Contact me</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
+              <input type="text" name="name" class="input" required />
               <label for="">Username</label>
               <span>Username</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
+              <input type="email" name="email" class="input" required />
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
+              <textarea required name="message" class="input"></textarea>
               <label for="">Message</label>
               <span>Message</span>
             </div>
@@ -681,5 +688,10 @@
         </div>
       </div>
     </section>
+    <!-- TOASTIFY -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>

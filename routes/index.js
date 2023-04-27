@@ -29,7 +29,7 @@ router.post('/send-email', (req, res) => {
     throw error;
   }
 
-  res.redirect('./success.html');
+  res.sendStatus(200);
 });
 
 module.exports = router;
