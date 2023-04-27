@@ -768,7 +768,6 @@ textarea.input {
 @media (max-width: 480px) {
   .container {
     padding: 1.5rem;
-    margin-bottom: 2rem;
   }
 
   .contact-info:before {
