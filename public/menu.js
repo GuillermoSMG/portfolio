@@ -1,5 +1,6 @@
 const navList = document.querySelector('.nav-list');
 const navToggle = document.querySelector('.mobile-nav-toggle');
+const navLinks = document.querySelectorAll('.list-item');
 
 navToggle.addEventListener('click', () => {
   const visibility = navList.getAttribute('data-visible');
@@ -11,4 +12,11 @@ navToggle.addEventListener('click', () => {
     navList.setAttribute('data-visible', 'false');
     navToggle.setAttribute('aria-expanded', 'false');
   }
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navList.setAttribute('data-visible', 'false');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
 });
