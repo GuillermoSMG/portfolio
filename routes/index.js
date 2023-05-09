@@ -18,7 +18,7 @@ router.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: 'Guillermo Portfolio',
-    to: 'emma.morar49@ethereal.email',
+    to: process.env.EMAIL_USER,
     subject: 'Portfolio Contact Form.',
     html: contentHTML,
   };
