@@ -444,6 +444,10 @@ body {
   margin: 0 auto;
 }
 
+.mysql {
+  width: 40px;
+}
+
 /* ========== TECH STACK END ========== */
 
 /* ==========  CONTACT ========== */
