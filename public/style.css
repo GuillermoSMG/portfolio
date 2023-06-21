@@ -109,7 +109,7 @@ body {
     display: block;
     z-index: 9999;
     background-color: transparent;
-    background-image: url('./logos/white-menu.png');
+    background-image: url('./logos/white-menu.webp');
     background-size: contain;
     border: none;
     cursor: pointer;
@@ -120,7 +120,7 @@ body {
   }
 
   .mobile-nav-toggle[aria-expanded='true'] {
-    background-image: url('./logos/white-close.png');
+    background-image: url('./logos/white-close.webp');
     background-size: contain;
   }
 }
@@ -850,5 +850,24 @@ textarea.input {
 
   .aboutme-img {
     display: none;
+  }
+}
+
+.float {
+  animation-name: ani-float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ani-float {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
   }
 }
