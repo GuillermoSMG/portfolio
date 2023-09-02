@@ -6,14 +6,8 @@
 
     <!-- META -->
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- META TAGS -->
     <meta
@@ -26,37 +20,20 @@
     />
 
     <!-- OG TAGS -->
-    <meta
-      property="og:title"
-      content="Portfolio - Guillermo San Martín"
-    />
+    <meta property="og:title" content="Portfolio - Guillermo San Martín" />
     <meta
       property="og:description"
       content="Guillermo San Martin's personal portfolio, where you'll find contact information, projects completed, and technology stack."
     />
 
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./logos/reacttablogo.svg"
-    />
+    <link rel="icon" type="image/x-icon" href="./logos/reacttablogo.svg" />
 
     <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- FONTS -->
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -70,21 +47,11 @@
     />
 
     <!-- AOS JS -->
-    <link
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- JS -->
-    <script
-      src="./menu.js"
-      defer
-    ></script>
-    <script
-      src="./index.js"
-      type="module"
-      defer
-    ></script>
+    <script src="./menu.js" defer></script>
+    <script src="./index.js" type="module" defer></script>
   </head>
   <body>
     <header class="header-container">
@@ -104,11 +71,7 @@
           aria-label="Toggle menu (open/close)"
         ></button>
         <nav class="nav">
-          <ul
-            data-visible="false"
-            id="nav-list"
-            class="nav-list"
-          >
+          <ul data-visible="false" id="nav-list" class="nav-list">
             <li class="list-item">
               <a
                 aria-label="Link to my portfolio home page"
@@ -141,23 +104,40 @@
                 >Tech stack</a
               >
             </li>
-            <li class="list-item">
+            <!-- <li class="list-item">
               <a
                 aria-label="Link to my portfolio contact page"
                 href="#contact"
                 class="list-link"
                 >Contact</a
               >
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
     </header>
-    <section
-      id="home"
-      class="home-container"
-    >
+    <section id="home" class="home-container">
       <div class="home">
+        <!--  <img
+          src="./mouse-images/earth.png"
+          class="layer"
+          data-speed="1"
+        />
+        <img
+          src="./mouse-images/jupiter.png"
+          class="layer"
+          data-speed="5"
+        />
+        <img
+          src="./mouse-images/satelite.png"
+          class="layer"
+          data-speed="-4"
+        />
+        <img
+          src="./mouse-images/singlestar.png"
+          class="layer"
+          data-speed="6"
+        /> -->
         <article class="home-title">
           <span
             data-aos="zoom-in"
@@ -180,6 +160,7 @@
             class="home-span frontend"
             >Frontend Developer</span
           >
+
           <ul
             class="social-list"
             data-aos-duration="1500"
@@ -220,7 +201,7 @@
               <a
                 aria-label="download my resume"
                 class="resume-link"
-                href="./pdf/CV_Frontend-GSM.pdf"
+                href="./pdf/CV_frontgsm.pdf"
                 download="CV_FrontEnd-GuillermoSM.pdf"
               >
                 <img
@@ -248,18 +229,62 @@
         </div>
       </div>
     </section>
-    <section
-      id="projects"
-      class="projects-container"
-    >
+    <section id="projects" class="projects-container">
       <h2 class="projects-title">Projects</h2>
       <main class="projects">
+        <!-- ARTICLE WHATSAPP BOT -->
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
+          <a
+            aria-label="Link to whatsapp bot"
+            class="project-link"
+            href="https://github.com/GuillermoSMG/whatsapp-bot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./imgs/wppweb2.webp"
+              alt="Whatsaap bot"
+              class="project-img"
+              title="WhatsApp bpt"
+            />
+          </a>
+          <div class="project-body">
+            <a
+              aria-label="Link to whatsapp bot"
+              class="project-link"
+              href="https://github.com/GuillermoSMG/whatsapp-bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 class="project-title">Whatsapp Bot</h3>
+            </a>
+            <span class="project-subtitle">BOT</span>
+            <p class="project-description">
+              Whatsapp web bot with utilities like wether, dolar exchange, etc.
+            </p>
+            <div class="links-container">
+              <a
+                aria-label="Link to whatsapp bot"
+                href="https://github.com/GuillermoSMG/whatsapp-bot"
+                target="_blank"
+              >
+                <img src="./logos/code.svg" alt="Code Logo" title="Code" />
+              </a>
+            </div>
+            <ul class="project-stack">
+              <li class="stack-technology">
+                <img
+                  class="stack-img"
+                  src="./logos/nodejs.svg"
+                  alt="NodeJS Logo"
+                  title="NodeJS"
+                />
+              </li>
+            </ul>
+          </div>
+        </article>
         <!-- ARTICLE NETFLIX CLONE -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to Netflix clone web"
             class="project-link"
@@ -291,20 +316,14 @@
                 href="https://netflix-clone-gsm.vercel.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to Netflix clone repositorie"
                 href="https://github.com/GuillermoSMG/netflix-clone"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -353,7 +372,7 @@
         </article>
 
         <!-- ARTICLE CODEWORD -->
-        <article
+        <!-- <article
           class="project"
           data-aos-duration="1500"
           data-aos="zoom-in"
@@ -427,14 +446,10 @@
               </li>
             </ul>
           </div>
-        </article>
+        </article> -->
 
         <!-- ARTICLE MESSENGER -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to Messenger clone web"
             class="project-link"
@@ -466,20 +481,14 @@
                 href="https://messenger-clone-gsm.vercel.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to Messenger clone repositorie"
                 href="https://github.com/GuillermoSMG/messenger-clone"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -528,11 +537,7 @@
         </article>
 
         <!-- ARTICLE MEDIATUBE -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to mediatube web"
             class="project-link"
@@ -568,20 +573,14 @@
                 href="https://mediatubeapp.netlify.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to mediatube repositorie"
                 href="https://github.com/GuillermoSMG/mediahub-reactJS"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -606,11 +605,7 @@
         </article>
 
         <!-- ARTICLE SUMZ -->
-        <article
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-          class="project"
-        >
+        <article data-aos-duration="1500" data-aos="zoom-in" class="project">
           <a
             aria-label="Link to Sumz web"
             class="project-link"
@@ -645,20 +640,14 @@
                 href="https://iasummarize.netlify.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to Sumz repositorie"
                 href="https://github.com/GuillermoSMG/openia-summarize"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -691,11 +680,7 @@
         </article>
 
         <!-- ARTICLE HN -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to Hacker News Test web"
             class="project-link"
@@ -730,20 +715,14 @@
                 href="https://hacker-news-tech-test.netlify.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to Hacker News Test repositorie"
                 href="https://github.com/GuillermoSMG/hacker-news-test"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -776,11 +755,7 @@
         </article>
 
         <!-- ARTICLE CLICK AND TYPE -->
-        <article
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-          class="project"
-        >
+        <article data-aos-duration="1500" data-aos="zoom-in" class="project">
           <a
             aria-label="Link to click and type web"
             class="project-link"
@@ -815,20 +790,14 @@
                 href="https://clickntype.netlify.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to keyboardecommerce (click and type) repositorie"
                 href="https://github.com/GuillermoSMG/keyboardecommerce"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -861,11 +830,7 @@
         </article>
 
         <!-- ARTICLE TESLA CLONE -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to tesla clone web"
             class="project-link"
@@ -899,20 +864,14 @@
                 href="https://teslalandingclone.netlify.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to tesla clone repositorie"
                 href="https://github.com/GuillermoSMG/tesla-landing"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -937,11 +896,7 @@
         </article>
 
         <!-- ARTICLE FAVORITE REPO -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to favorite repo web"
             class="project-link"
@@ -976,20 +931,14 @@
                 href="https://favoriterepo.netlify.app/"
                 target="_blank"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to favorite repo repositorie"
                 href="https://github.com/GuillermoSMG/reactquery-zustand-favoritesRepos"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -1030,11 +979,7 @@
         </article>
 
         <!-- ARTICLE BLOG API REST -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to api rest blog repositorie"
             class="project-link"
@@ -1069,11 +1014,7 @@
                 href="https://github.com/GuillermoSMG/blog_apiRESTful"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                  title="Code"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" title="Code" />
               </a>
             </div>
             <ul class="project-stack">
@@ -1114,11 +1055,7 @@
         </article>
 
         <!-- ARTICLE MOVIE SEARCHER -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to movie searcher web"
             class="project-link"
@@ -1155,20 +1092,14 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="./logos/web.svg"
-                  alt="Web Logo"
-                />
+                <img src="./logos/web.svg" alt="Web Logo" />
               </a>
               <a
                 aria-label="Link to movie searcher repositorie"
                 href="https://github.com/GuillermoSMG/movieSearcher"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" />
               </a>
             </div>
             <ul class="project-stack">
@@ -1193,11 +1124,7 @@
         </article>
 
         <!-- ARTICLE SOCIAL NETWORK API REST -->
-        <article
-          class="project"
-          data-aos-duration="1500"
-          data-aos="zoom-in"
-        >
+        <article class="project" data-aos-duration="1500" data-aos="zoom-in">
           <a
             aria-label="Link to social network api rest"
             class="project-link"
@@ -1207,9 +1134,9 @@
           >
             <img
               src="./imgs/apisocialnet.webp"
-              alt="Movie Searcher"
+              alt="Social network api rest"
               class="project-img"
-              title="Movie Searcher"
+              title="Social network api rest"
             />
           </a>
           <div class="project-body">
@@ -1233,11 +1160,7 @@
                 href="https://github.com/GuillermoSMG/social-network-API"
                 target="_blank"
               >
-                <img
-                  src="./logos/code.svg"
-                  alt="Code Logo"
-                  title="Code"
-                />
+                <img src="./logos/code.svg" alt="Code Logo" title="Code" />
               </a>
             </div>
             <ul class="project-stack">
@@ -1279,16 +1202,9 @@
       </main>
     </section>
     <!-- ABOUT ME -->
-    <section
-      id="aboutme"
-      class="aboutme-container"
-    >
+    <section id="aboutme" class="aboutme-container">
       <span class="big-circle-two"></span>
-      <main
-        class="aboutme"
-        data-aos-duration="1500"
-        data-aos="zoom-in"
-      >
+      <main class="aboutme" data-aos-duration="1500" data-aos="zoom-in">
         <div class="aboutme-img-container">
           <img
             src="./imgs/fotoparacv2.webp"
@@ -1303,16 +1219,9 @@
         </p>
       </main>
     </section>
-    <section
-      class="techstack-container"
-      id="techstack"
-    >
+    <section class="techstack-container" id="techstack">
       <h2 class="techstack-title">Tech Stack</h2>
-      <main
-        data-aos-duration="1500"
-        data-aos="zoom-in"
-        class="techstack"
-      >
+      <main data-aos-duration="1500" data-aos="zoom-in" class="techstack">
         <img
           src="./logos/javascript.svg"
           title="JavaScript"
@@ -1441,7 +1350,7 @@
         />
       </main>
     </section>
-    <section
+    <!-- <section
       class="container"
       id="contact"
     >
@@ -1555,7 +1464,7 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- TOASTIFY -->
     <script
       type="text/javascript"
@@ -1567,5 +1476,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="gsap.min.js"></script>
   </body>
 </html>

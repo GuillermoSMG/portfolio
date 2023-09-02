@@ -134,6 +134,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: var(--main-height);
+  height: 90svh;
 }
 
 .home {
